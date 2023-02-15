@@ -13,9 +13,10 @@ import {
   UserSignup,
   VendorLogin,
   VendorProduct,
+  About,
 } from "./Components";
-import { Container } from "react-bootstrap";
-
+import "./Assets/Styles/css/bootstrap.min.css";
+import "./Assets/Styles/css/style.css";
 function App() {
   return (
     <Router>
@@ -23,7 +24,7 @@ function App() {
       <main className="py-3">
         <Routes>
           <Route path="/" exact element={<Home />} />
-
+          <Route path="/about" exact element={<About />} />
           <Route path="/contact" exact element={<Contact />} />
           <Route path="/service" exact element={<Service />} />
           <Route path="/testimonial" exact element={<Testimonial />} />

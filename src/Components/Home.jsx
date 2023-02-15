@@ -1,6 +1,4 @@
 import React from "react";
-import "../Assets/Styles/css/style.css";
-import "../Assets/Styles/css/bootstrap.min.css";
 
 const Home = () => {
   return (
