@@ -14,31 +14,50 @@ import {
   VendorLogin,
   VendorProduct,
   About,
+  Product,
 } from "./Components";
+
+import "./Assets/Styles/lib/flaticon/font/flaticon.css";
+// import "./Assets/Styles/lib/owlcarousel/assets/owl.carousel.min.css";
+
 import "./Assets/Styles/css/bootstrap.min.css";
 import "./Assets/Styles/css/style.css";
+
+// import "./Assets/Styles/lib/easing/easing.min.js";
+// import "./Assets/Styles/lib/waypoints/waypoints.min.js";
+// import "./Assets/Styles/lib/owlcarousel/owl.carousel.min.js";
+
+// import "./Assets/Styles/js/main.js";
+import ScriptTag from "react-script-tag";
+
+import Navbar from "./Layouts/Navbar";
+import Footer from "./Layouts/Footer";
 function App() {
   return (
-    <Router>
-      {/* <Header /> */}
-      <main className="py-3">
-        <Routes>
-          <Route path="/" exact element={<Home />} />
-          <Route path="/about" exact element={<About />} />
-          <Route path="/contact" exact element={<Contact />} />
-          <Route path="/service" exact element={<Service />} />
-          <Route path="/testimonial" exact element={<Testimonial />} />
-          <Route path="/change/password" exact element={<UserChangePass />} />
-          <Route path="/user/index" exact element={<UserIndex />} />
-          <Route path="/user/login" exact element={<UserLogin />} />
-          <Route path="/user/profile" exact element={<UserProfile />} />
-          <Route path="/user/signup" exact element={<UserSignup />} />
-          <Route path="/vendor/login" exact element={<VendorLogin />} />
-          <Route path="/vendor/product" exact element={<VendorProduct />} />
-        </Routes>
-      </main>
-      {/* <Footer /> */}
-    </Router>
+    <>
+      <Router>
+        <Navbar />
+        <main className="py-3">
+          <Routes>
+            <Route path="/" exact element={<Home />} />
+            <Route path="/about" exact element={<About />} />
+            <Route path="/contact" exact element={<Contact />} />
+            <Route path="/product" exact element={<Product />} />
+            <Route path="/service" exact element={<Service />} />
+            <Route path="/testimonial" exact element={<Testimonial />} />
+            <Route path="/change/password" exact element={<UserChangePass />} />
+            <Route path="/user/index" exact element={<UserIndex />} />
+            <Route path="/user/login" exact element={<UserLogin />} />
+            <Route path="/user/profile" exact element={<UserProfile />} />
+            <Route path="/user/signup" exact element={<UserSignup />} />
+            <Route path="/vendor/login" exact element={<VendorLogin />} />
+            <Route path="/vendor/product" exact element={<VendorProduct />} />
+          </Routes>
+        </main>
+        <Footer />
+      </Router>
+      <ScriptTag type="text/javascript" src="./Assets/Styles/js/main.js" />
+    </>
   );
 }
 

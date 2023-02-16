@@ -1,101 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <>
-      {/*  Topbar Start  */}
-      <div className="container-fluid border-bottom d-none d-lg-block">
-        <div className="row gx-0">
-          <div className="col-lg-4 text-center py-2">
-            <div className="d-inline-flex align-items-center">
-              <i className="bi bi-geo-alt fs-1 text-primary me-3"></i>
-              <div className="text-start">
-                <h6 className="text-uppercase mb-1">Our Office</h6>
-                <span>123 Street, Abc City, India</span>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 text-center border-start border-end py-2">
-            <div className="d-inline-flex align-items-center">
-              <i className="bi bi-envelope-open fs-1 text-primary me-3"></i>
-              <div className="text-start">
-                <h6 className="text-uppercase mb-1">Email Us</h6>
-                <span>info@example.com</span>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 text-center py-2">
-            <div className="d-inline-flex align-items-center">
-              <i className="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
-              <div className="text-start">
-                <h6 className="text-uppercase mb-1">Call Us</h6>
-                <span>+91 987-654-3210</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/*  Topbar End  */}
-
-      {/*  Navbar Start  */}
-      <nav className="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
-        <a href="index.html" className="navbar-brand ms-lg-5">
-          <h1 className="m-0 text-uppercase text-dark">
-            <i className="bi bi-shop fs-1 text-primary me-3"></i>
-            Pet Shop
-          </h1>
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarCollapse">
-          <div className="navbar-nav ms-auto py-0">
-            <a href="index.html" className="nav-item nav-link active">
-              Home
-            </a>
-            <a href="product.html" className="nav-item nav-link">
-              Product
-            </a>
-            <a href="service.html" className="nav-item nav-link">
-              Service
-            </a>
-            <a href="about.html" className="nav-item nav-link">
-              About
-            </a>
-            <div className="nav-item dropdown">
-              <a
-                href="#"
-                className="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-              >
-                Login
-              </a>
-              <div className="dropdown-menu m-0 text-center">
-                <a href="userlogin.html" className="dropdown-item">
-                  USER LOGIN
-                </a>
-                <a href="vendorlogin.html" className="dropdown-item">
-                  VENDOR LOGIN
-                </a>
-              </div>
-            </div>
-            <a
-              href="contact.html"
-              className="nav-item nav-link nav-contact bg-primary text-white px-5 ms-lg-5"
-            >
-              Contact
-              <i className="bi bi-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-      </nav>
-      {/*  Navbar End  */}
-
       {/*  Hero Start  */}
       <div className="container-fluid bg-primary py-5 mb-5 hero-header">
         <div className="container py-5">
@@ -131,7 +39,7 @@ const Home = () => {
               <div className="position-relative h-100">
                 <img
                   className="position-absolute w-100 h-100 rounded"
-                  src="img/about.jpg"
+                  src={require("../Assets/Images/about.jpg")}
                   style={{ objectFit: "cover" }}
                 />
               </div>
@@ -350,7 +258,7 @@ const Home = () => {
               <div className="product-item position-relative bg-light d-flex flex-column text-center">
                 <img
                   className="img-fluid mb-4"
-                  src="img/product-1.png"
+                  src={require("../Assets/Images/product-1.png")}
                   alt=""
                 />
                 <h6 className="text-uppercase">Quality Pet Foods</h6>
@@ -369,7 +277,7 @@ const Home = () => {
               <div className="product-item position-relative bg-light d-flex flex-column text-center">
                 <img
                   className="img-fluid mb-4"
-                  src="img/product-2.png"
+                  src={require("../Assets/Images/product-2.png")}
                   alt=""
                 />
                 <h6 className="text-uppercase">Quality Pet Foods</h6>
@@ -388,7 +296,7 @@ const Home = () => {
               <div className="product-item position-relative bg-light d-flex flex-column text-center">
                 <img
                   className="img-fluid mb-4"
-                  src="img/product-3.png"
+                  src={require("../Assets/Images/product-3.png")}
                   alt=""
                 />
                 <h6 className="text-uppercase">Quality Pet Foods</h6>
@@ -407,7 +315,7 @@ const Home = () => {
               <div className="product-item position-relative bg-light d-flex flex-column text-center">
                 <img
                   className="img-fluid mb-4"
-                  src="img/product-4.png"
+                  src={require("../Assets/Images/product-4.png")}
                   alt=""
                 />
                 <h6 className="text-uppercase">Quality Pet Foods</h6>
@@ -426,7 +334,7 @@ const Home = () => {
               <div className="product-item position-relative bg-light d-flex flex-column text-center">
                 <img
                   className="img-fluid mb-4"
-                  src="img/product-2.png"
+                  src={require("../Assets/Images/product-2.png")}
                   alt=""
                 />
                 <h6 className="text-uppercase">Quality Pet Foods</h6>
@@ -463,12 +371,12 @@ const Home = () => {
                 eos vero ea et dolore eirmod et. Dolores diam duo lorem. Elitr
                 ut dolores magna sit. Sea dolore sed et.
               </p>
-              <a
-                href="product.html"
-                className="btn btn-light py-md-3 px-md-5 me-3"
-              >
-                Shop Now
-              </a>
+
+              <Link to={"/product"}>
+                <div className="btn btn-light py-md-3 px-md-5 me-3">
+                  Shop Now
+                </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -488,7 +396,7 @@ const Home = () => {
                   <div className="position-relative mb-4">
                     <img
                       className="img-fluid mx-auto"
-                      src="img/testimonial-1.jpg"
+                      src={require("../Assets/Images/testimonial-1.jpg")}
                       alt=""
                     />
                     <div
@@ -512,7 +420,7 @@ const Home = () => {
                   <div className="position-relative mb-4">
                     <img
                       className="img-fluid mx-auto"
-                      src="img/testimonial-2.jpg"
+                      src={require("../Assets/Images/testimonial-2.jpg")}
                       alt=""
                     />
                     <div
@@ -538,107 +446,6 @@ const Home = () => {
         </div>
       </div>
       {/*  Testimonial End  */}
-
-      {/*  Footer Start  */}
-      <div className="container-fluid bg-light mt-5 py-5">
-        <div className="container pt-5">
-          <div className="row g-5">
-            <div className="col-lg-5 col-md-4">
-              <h5 className="text-uppercase border-start border-5 border-primary ps-3 mb-4">
-                Get In Touch
-              </h5>
-              <p className="mb-4">
-                No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita
-                et et dolor sed dolor
-              </p>
-              <p className="mb-2">
-                <i className="bi bi-geo-alt text-primary me-2"></i>123 Street,
-                New York, USA
-              </p>
-              <p className="mb-2">
-                <i className="bi bi-envelope-open text-primary me-2"></i>
-                info@example.com
-              </p>
-              <p className="mb-0">
-                <i className="bi bi-telephone text-primary me-2"></i>+012 345
-                67890
-              </p>
-            </div>
-            <div className="col-lg-4 col-md-4">
-              <h5 className="text-uppercase border-start border-5 border-primary ps-3 mb-4">
-                Quick Links
-              </h5>
-              <div className="d-flex flex-column justify-content-start">
-                <a className="text-body mb-2" href="#">
-                  <i className="bi bi-arrow-right text-primary me-2"></i>Home
-                </a>
-                <a className="text-body mb-2" href="#">
-                  <i className="bi bi-arrow-right text-primary me-2"></i>About
-                  Us
-                </a>
-                <a className="text-body mb-2" href="#">
-                  <i className="bi bi-arrow-right text-primary me-2"></i>Our
-                  Services
-                </a>
-                <a className="text-body" href="#">
-                  <i className="bi bi-arrow-right text-primary me-2"></i>Contact
-                  Us
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4">
-              <h5 className="text-uppercase border-start border-5 border-primary ps-3 mb-4">
-                Follow Us
-              </h5>
-              <div className="d-flex">
-                <a className="btn btn-outline-primary btn-square me-2" href="#">
-                  <i className="bi bi-twitter"></i>
-                </a>
-                <a className="btn btn-outline-primary btn-square me-2" href="#">
-                  <i className="bi bi-facebook"></i>
-                </a>
-                <a className="btn btn-outline-primary btn-square me-2" href="#">
-                  <i className="bi bi-linkedin"></i>
-                </a>
-                <a className="btn btn-outline-primary btn-square" href="#">
-                  <i className="bi bi-instagram"></i>
-                </a>
-              </div>
-            </div>
-            <div className="col-12 text-center text-body">
-              <a className="text-body" href="">
-                Terms & Conditions
-              </a>
-              <span className="mx-1">|</span>
-              <a className="text-body" href="">
-                Privacy Policy
-              </a>
-              <span className="mx-1">|</span>
-              <a className="text-body" href="">
-                Customer Support
-              </a>
-              <span className="mx-1">|</span>
-              <a className="text-body" href="">
-                Payments
-              </a>
-              <span className="mx-1">|</span>
-              <a className="text-body" href="">
-                Help
-              </a>
-              <span className="mx-1">|</span>
-              <a className="text-body" href="">
-                FAQs
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/*  Footer End  */}
-
-      {/*  Back to Top  */}
-      <a href="#" className="btn btn-primary py-3 fs-4 back-to-top">
-        <i className="bi bi-arrow-up"></i>
-      </a>
     </>
   );
 };
