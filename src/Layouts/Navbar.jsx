@@ -58,18 +58,18 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <div className="navbar-nav ms-auto py-0">
-            <Link to={"/"}>
-              <div className="nav-item nav-link">Home</div>
+            <Link className="nav-item nav-link" to={"/"}>
+              Home
             </Link>
-            <Link to={"/product"}>
-              <div className="nav-item nav-link">Product</div>
+            <Link className="nav-item nav-link" to={"/product"}>
+              Product
             </Link>
-            <Link to={"/service"}>
-              <div className="nav-item nav-link">Service</div>
+            <Link className="nav-item nav-link" to={"/service"}>
+              Service
             </Link>
 
-            <Link to={"/about"}>
-              <div className="nav-item nav-link">About</div>
+            <Link className="nav-item nav-link" to={"/about"}>
+              About
             </Link>
 
             <div className="nav-item dropdown">
@@ -78,20 +78,20 @@ const Navbar = () => {
               </div>
 
               <div className="dropdown-menu m-0 text-center">
-                <Link to={"/user/login"}>
-                  <div className="dropdown-item">USER LOGIN</div>
+                <Link className="dropdown-item" to={"/user/login"}>
+                  USER LOGIN
                 </Link>
-                <Link to={"/vendor/login"}>
-                  <div className="dropdown-item">VENDOR LOGIN</div>
+                <Link className="dropdown-item" to={"/vendor/login"}>
+                  VENDOR LOGIN
                 </Link>
               </div>
             </div>
-            <a
-              href="contact.html"
+            <Link
               className="nav-item nav-link nav-contact bg-primary text-white px-5 ms-lg-5"
+              to={"/contact"}
             >
               Contact <i className="bi bi-arrow-right"></i>
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
