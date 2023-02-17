@@ -1,15 +1,9 @@
 import React from "react";
 import Carousel from "react-elastic-carousel";
+import { Link } from "react-router-dom";
+import breakPoints from "../Assets/breakpoints";
 
 const About = () => {
-  const breakPoints = [
-    { width: 1, itemsToShow: 1 },
-    { width: 550, itemsToShow: 2, itemsToScroll: 2, pagination: false },
-    { width: 850, itemsToShow: 3 },
-    { width: 1150, itemsToShow: 4, itemsToScroll: 2 },
-    { width: 1450, itemsToShow: 5 },
-    { width: 1750, itemsToShow: 6 },
-  ];
   return (
     <>
       {/*  About Start  */}
@@ -134,12 +128,12 @@ const About = () => {
                 eos vero ea et dolore eirmod et. Dolores diam duo lorem. Elitr
                 ut dolores magna sit. Sea dolore sed et.
               </p>
-              <a
-                href="product.html"
+              <Link
+                to="/product"
                 className="btn btn-light py-md-3 px-md-5 me-3"
               >
                 Shop Now
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,4 +1,6 @@
 import React from "react";
+import breakPoints from "../Assets/breakpoints";
+import Carousel from "react-elastic-carousel";
 
 const Testimonial = () => {
   return (
@@ -10,7 +12,10 @@ const Testimonial = () => {
         <div className="container py-5">
           <div className="row justify-content-end">
             <div className="col-lg-7">
-              <div className="owl-carousel testimonial-carousel bg-white p-5">
+              <Carousel
+                breakPoints={breakPoints}
+                className=" testimonial-carousel bg-white p-5"
+              >
                 <div className="testimonial-item text-center">
                   <div className="position-relative mb-4">
                     <img
@@ -59,7 +64,7 @@ const Testimonial = () => {
                   <h5 className="text-uppercase">Client Name</h5>
                   <span>Profession</span>
                 </div>
-              </div>
+              </Carousel>
             </div>
           </div>
         </div>
