@@ -1,3 +1,5 @@
+// eslint -c myconfig.json myfiletotest.js
+
 import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -23,15 +25,9 @@ import "./Assets/Styles/lib/flaticon/font/flaticon.css";
 import "./Assets/Styles/css/bootstrap.min.css";
 import "./Assets/Styles/css/style.css";
 
-// import "./Assets/Styles/lib/easing/easing.min.js";
-// import "./Assets/Styles/lib/waypoints/waypoints.min.js";
-// import "./Assets/Styles/lib/owlcarousel/owl.carousel.min.js";
-
-// import "./Assets/Styles/js/main.js";
-import ScriptTag from "react-script-tag";
-
 import Navbar from "./Layouts/Navbar";
 import Footer from "./Layouts/Footer";
+
 function App() {
   return (
     <>
@@ -56,7 +52,6 @@ function App() {
         </main>
         <Footer />
       </Router>
-      <ScriptTag type="text/javascript" src="./Assets/Styles/js/main.js" />
     </>
   );
 }

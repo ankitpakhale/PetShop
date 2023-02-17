@@ -8,7 +8,7 @@ const VendorProduct = () => {
         {/*  Button to Open the Modal  */}
         <button
           type="button"
-          class="btn btn-primary"
+          class="btn btn-primary text-light"
           data-bs-toggle="modal"
           data-bs-target="#myModal"
         >
