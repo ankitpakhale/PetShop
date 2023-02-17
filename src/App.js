@@ -1,4 +1,6 @@
-// eslint -c myconfig.json myfiletotest.js
+// import "owl.carousel/dist/assets/owl.carousel.css";
+// import "owl.carousel";
+
 
 import logo from "./logo.svg";
 import "./App.css";
@@ -18,16 +20,16 @@ import {
   About,
   Product,
 } from "./Components";
-
 import "./Assets/Styles/lib/flaticon/font/flaticon.css";
-// import "./Assets/Styles/lib/owlcarousel/assets/owl.carousel.min.css";
 
 import "./Assets/Styles/css/bootstrap.min.css";
 import "./Assets/Styles/css/style.css";
+import "./Assets/Styles/css/carousel.css";
 
 import Navbar from "./Layouts/Navbar";
 import Footer from "./Layouts/Footer";
 
+// import "./Assets/Styles/lib/owlcarousel/assets/owl.carousel.min.css";
 function App() {
   return (
     <>

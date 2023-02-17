@@ -1,4 +1,8 @@
 import React from "react";
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
+import "../Assets/Styles/css/carousel.css";
 
 const Product = () => {
   return (
@@ -14,7 +18,7 @@ const Product = () => {
               Products For Your Best Friends
             </h1>
           </div>
-          <div className="owl-carousel product-carousel">
+          <OwlCarousel className="product-carousel">
             <div className="pb-5">
               <div className="product-item position-relative bg-light d-flex flex-column text-center">
                 <img
@@ -110,7 +114,7 @@ const Product = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </OwlCarousel>
         </div>
       </div>
       <div className="container-fluid py-5">
@@ -124,7 +128,7 @@ const Product = () => {
               Products For Your Best Friends
             </h1>
           </div>
-          <div className="owl-carousel product-carousel">
+          <OwlCarousel className="product-carousel">
             <div className="pb-5">
               <div className="product-item position-relative bg-light d-flex flex-column text-center">
                 <img
@@ -220,7 +224,7 @@ const Product = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </OwlCarousel>
         </div>
       </div>
       <div className="container-fluid py-5">
@@ -234,7 +238,7 @@ const Product = () => {
               Products For Your Best Friends
             </h1>
           </div>
-          <div className="owl-carousel product-carousel">
+          <OwlCarousel className=" product-carousel">
             <div className="pb-5">
               <div className="product-item position-relative bg-light d-flex flex-column text-center">
                 <img
@@ -330,7 +334,7 @@ const Product = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </OwlCarousel>
         </div>
       </div>
     </>

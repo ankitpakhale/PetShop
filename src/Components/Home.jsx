@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
 
 const Home = () => {
   return (
@@ -253,7 +256,7 @@ const Home = () => {
               Products For Your Best Friends
             </h1>
           </div>
-          <div className="owl-carousel product-carousel">
+          <OwlCarousel className=" product-carousel">
             <div className="pb-5">
               <div className="product-item position-relative bg-light d-flex flex-column text-center">
                 <img
@@ -349,7 +352,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </OwlCarousel>
         </div>
       </div>
       {/*  Products End  */}
@@ -391,7 +394,7 @@ const Home = () => {
         <div className="container py-5">
           <div className="row justify-content-end">
             <div className="col-lg-7">
-              <div className="owl-carousel testimonial-carousel bg-white p-5">
+              <OwlCarousel className=" testimonial-carousel bg-white p-5">
                 <div className="testimonial-item text-center">
                   <div className="position-relative mb-4">
                     <img
@@ -440,7 +443,7 @@ const Home = () => {
                   <h5 className="text-uppercase">Client Name</h5>
                   <span>Profession</span>
                 </div>
-              </div>
+              </OwlCarousel>
             </div>
           </div>
         </div>
