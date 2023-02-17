@@ -33,7 +33,7 @@ const Product = () => {
             </h1>
           </div>
           <Carousel breakPoints={breakPoints} className="product-carousel">
-            <div className="pb-5">
+            <div className="pb-5 m-2">
               <div className="product-item position-relative bg-light d-flex flex-column text-center">
                 <img
                   className="img-fluid mb-4"
@@ -52,7 +52,7 @@ const Product = () => {
                 </div>
               </div>
             </div>
-            <div className="pb-5">
+            <div className="pb-5 m-2">
               <div className="product-item position-relative bg-light d-flex flex-column text-center">
                 <img
                   className="img-fluid mb-4"
@@ -71,7 +71,7 @@ const Product = () => {
                 </div>
               </div>
             </div>
-            <div className="pb-5">
+            <div className="pb-5 m-2">
               <div className="product-item position-relative bg-light d-flex flex-column text-center">
                 <img
                   className="img-fluid mb-4"
@@ -90,7 +90,7 @@ const Product = () => {
                 </div>
               </div>
             </div>
-            <div className="pb-5">
+            <div className="pb-5 m-2">
               <div className="product-item position-relative bg-light d-flex flex-column text-center">
                 <img
                   className="img-fluid mb-4"
@@ -109,7 +109,7 @@ const Product = () => {
                 </div>
               </div>
             </div>
-            <div className="pb-5">
+            <div className="pb-5 m-2">
               <div className="product-item position-relative bg-light d-flex flex-column text-center">
                 <img
                   className="img-fluid mb-4"
@@ -143,7 +143,7 @@ const Product = () => {
             </h1>
           </div>
           <Carousel breakPoints={breakPoints} className="product-carousel">
-            <div className="pb-5">
+            <div className="pb-5 m-2">
               <div className="product-item position-relative bg-light d-flex flex-column text-center">
                 <img
                   className="img-fluid mb-4"
@@ -162,7 +162,7 @@ const Product = () => {
                 </div>
               </div>
             </div>
-            <div className="pb-5">
+            <div className="pb-5 m-2">
               <div className="product-item position-relative bg-light d-flex flex-column text-center">
                 <img
                   className="img-fluid mb-4"
@@ -181,7 +181,7 @@ const Product = () => {
                 </div>
               </div>
             </div>
-            <div className="pb-5">
+            <div className="pb-5 m-2">
               <div className="product-item position-relative bg-light d-flex flex-column text-center">
                 <img
                   className="img-fluid mb-4"
@@ -200,7 +200,7 @@ const Product = () => {
                 </div>
               </div>
             </div>
-            <div className="pb-5">
+            <div className="pb-5 m-2">
               <div className="product-item position-relative bg-light d-flex flex-column text-center">
                 <img
                   className="img-fluid mb-4"
@@ -219,7 +219,7 @@ const Product = () => {
                 </div>
               </div>
             </div>
-            <div className="pb-5">
+            <div className="pb-5 m-2">
               <div className="product-item position-relative bg-light d-flex flex-column text-center">
                 <img
                   className="img-fluid mb-4"
@@ -253,7 +253,7 @@ const Product = () => {
             </h1>
           </div>
           <Carousel breakPoints={breakPoints} className=" product-carousel">
-            <div className="pb-5">
+            <div className="pb-5 m-2">
               <div className="product-item position-relative bg-light d-flex flex-column text-center">
                 <img
                   className="img-fluid mb-4"
@@ -272,7 +272,7 @@ const Product = () => {
                 </div>
               </div>
             </div>
-            <div className="pb-5">
+            <div className="pb-5 m-2">
               <div className="product-item position-relative bg-light d-flex flex-column text-center">
                 <img
                   className="img-fluid mb-4"
@@ -291,7 +291,7 @@ const Product = () => {
                 </div>
               </div>
             </div>
-            <div className="pb-5">
+            <div className="pb-5 m-2">
               <div className="product-item position-relative bg-light d-flex flex-column text-center">
                 <img
                   className="img-fluid mb-4"
@@ -310,7 +310,7 @@ const Product = () => {
                 </div>
               </div>
             </div>
-            <div className="pb-5">
+            <div className="pb-5 m-2">
               <div className="product-item position-relative bg-light d-flex flex-column text-center">
                 <img
                   className="img-fluid mb-4"
@@ -329,7 +329,7 @@ const Product = () => {
                 </div>
               </div>
             </div>
-            <div className="pb-5">
+            <div className="pb-5 m-2">
               <div className="product-item position-relative bg-light d-flex flex-column text-center">
                 <img
                   className="img-fluid mb-4"

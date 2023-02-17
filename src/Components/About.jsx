@@ -1,9 +1,17 @@
 import React from "react";
+import Carousel from "react-elastic-carousel";
 
 const About = () => {
+  const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 2, itemsToScroll: 2, pagination: false },
+    { width: 850, itemsToShow: 3 },
+    { width: 1150, itemsToShow: 4, itemsToScroll: 2 },
+    { width: 1450, itemsToShow: 5 },
+    { width: 1750, itemsToShow: 6 },
+  ];
   return (
     <>
-     
       {/*  About Start  */}
       <div className="container-fluid py-5">
         <div className="container">
@@ -15,7 +23,7 @@ const About = () => {
               <div className="position-relative h-100">
                 <img
                   className="position-absolute w-100 h-100 rounded"
-                  src="../Assets/Images/about.jpg"
+                  src={require("../Assets/Images/about.jpg")}
                   style={{ objectFit: "cover" }}
                 />
               </div>
@@ -150,15 +158,16 @@ const About = () => {
               Qualified Pets Care Professionals
             </h1>
           </div>
-          <div
-            className="owl-carousel team-carousel position-relative"
+          <Carousel
+            breakPoints={breakPoints}
+            className="team-carousel position-relative"
             style={{ paddingRight: "25px" }}
           >
-            <div className="team-item">
+            <div className="team-item m-2">
               <div className="position-relative overflow-hidden">
                 <img
                   className="img-fluid w-100"
-                  src="../Assets/Images/team-1.jpg"
+                  src={require("../Assets/Images/team-1.jpg")}
                   alt=""
                 />
                 <div className="team-overlay">
@@ -180,11 +189,11 @@ const About = () => {
                 <p className="m-0">Designation</p>
               </div>
             </div>
-            <div className="team-item">
+            <div className="team-item m-2">
               <div className="position-relative overflow-hidden">
                 <img
                   className="img-fluid w-100"
-                  src="../Assets/Images/team-2.jpg"
+                  src={require("../Assets/Images/team-2.jpg")}
                   alt=""
                 />
                 <div className="team-overlay">
@@ -206,11 +215,11 @@ const About = () => {
                 <p className="m-0">Designation</p>
               </div>
             </div>
-            <div className="team-item">
+            <div className="team-item m-2">
               <div className="position-relative overflow-hidden">
                 <img
                   className="img-fluid w-100"
-                  src="../Assets/Images/team-3.jpg"
+                  src={require("../Assets/Images/team-3.jpg")}
                   alt=""
                 />
                 <div className="team-overlay">
@@ -232,11 +241,11 @@ const About = () => {
                 <p className="m-0">Designation</p>
               </div>
             </div>
-            <div className="team-item">
+            <div className="team-item m-2">
               <div className="position-relative overflow-hidden">
                 <img
                   className="img-fluid w-100"
-                  src="../Assets/Images/team-4.jpg"
+                  src={require("../Assets/Images/team-4.jpg")}
                   alt=""
                 />
                 <div className="team-overlay">
@@ -258,11 +267,11 @@ const About = () => {
                 <p className="m-0">Designation</p>
               </div>
             </div>
-            <div className="team-item">
+            <div className="team-item m-2">
               <div className="position-relative overflow-hidden">
                 <img
                   className="img-fluid w-100"
-                  src="../Assets/Images/team-5.jpg"
+                  src={require("../Assets/Images/team-5.jpg")}
                   alt=""
                 />
                 <div className="team-overlay">
@@ -284,11 +293,10 @@ const About = () => {
                 <p className="m-0">Designation</p>
               </div>
             </div>
-          </div>
+          </Carousel>
         </div>
       </div>
       {/*  Team End  */}
-
     </>
   );
 };
