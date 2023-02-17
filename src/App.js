@@ -1,7 +1,3 @@
-// import "owl.carousel/dist/assets/owl.carousel.css";
-// import "owl.carousel";
-
-
 import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
