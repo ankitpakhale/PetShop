@@ -1,7 +1,20 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const [isUser, setIsUser] = useState(false);
+
+  const location = useLocation();
+  useEffect(() => {
+    const url = location.pathname.split("/").at(-1);
+    if (url === "user-login") {
+      setIsUser(true);
+    }
+    return () => {
+      setIsUser(false);
+    };
+  }, [location]);
+
   return (
     <>
       {/*  Topbar Start  */}
@@ -76,14 +89,16 @@ const Navbar = () => {
               <div class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                 Login
               </div>
-
               <div className="dropdown-menu m-0 text-center">
-                <Link className="dropdown-item" to={"/user/login"}>
-                  USER LOGIN
-                </Link>
-                <Link className="dropdown-item" to={"/vendor/login"}>
-                  VENDOR LOGIN
-                </Link>
+                {isUser ? (
+                  <Link className="dropdown-item" to={"/vendor-login"}>
+                    VENDOR LOGIN
+                  </Link>
+                ) : (
+                  <Link className="dropdown-item" to={"/user-login"}>
+                    USER LOGIN
+                  </Link>
+                )}
               </div>
             </div>
             <Link

@@ -41,11 +41,11 @@ function App() {
             <Route path="/testimonial" exact element={<Testimonial />} />
             <Route path="/change/password" exact element={<UserChangePass />} />
             <Route path="/user/index" exact element={<UserIndex />} />
-            <Route path="/user/login" exact element={<UserLogin />} />
-            <Route path="/user/profile" exact element={<UserProfile />} />
-            <Route path="/user/signup" exact element={<UserSignup />} />
-            <Route path="/vendor/login" exact element={<VendorLogin />} />
-            <Route path="/vendor/product" exact element={<VendorProduct />} />
+            <Route path="/user-login" exact element={<UserLogin />} />
+            <Route path="/user-profile" exact element={<UserProfile />} />
+            <Route path="/user-signup" exact element={<UserSignup />} />
+            <Route path="/vendor-login" exact element={<VendorLogin />} />
+            <Route path="/vendor-product" exact element={<VendorProduct />} />
           </Routes>
         </main>
         <Footer />
