@@ -1,10 +1,24 @@
+// import "../Assets/Styles/css/carousel.css";
+import "../Assets/Styles/lib/owlcarousel/assets/owl.carousel.css";
+import "../Assets/Styles/lib/owlcarousel/assets/owl.carousel.min.css";
+import "../Assets/Styles/lib/owlcarousel/assets/owl.theme.default.css";
+import "../Assets/Styles/lib/owlcarousel/assets/owl.theme.default.min.css";
+import "../Assets/Styles/lib/owlcarousel/assets/owl.theme.green.css";
+import "../Assets/Styles/lib/owlcarousel/assets/owl.theme.green.min.css";
+
 import React from "react";
-import OwlCarousel from "react-owl-carousel";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
-import "../Assets/Styles/css/carousel.css";
+
+import Carousel from "react-elastic-carousel";
 
 const Product = () => {
+  const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 2, itemsToScroll: 2, pagination: false },
+    { width: 850, itemsToShow: 3 },
+    { width: 1150, itemsToShow: 4, itemsToScroll: 2 },
+    { width: 1450, itemsToShow: 5 },
+    { width: 1750, itemsToShow: 6 },
+  ];
   return (
     <>
       <div className="container-fluid py-5">
@@ -18,7 +32,7 @@ const Product = () => {
               Products For Your Best Friends
             </h1>
           </div>
-          <OwlCarousel className="product-carousel">
+          <Carousel breakPoints={breakPoints} className="product-carousel">
             <div className="pb-5">
               <div className="product-item position-relative bg-light d-flex flex-column text-center">
                 <img
@@ -114,7 +128,7 @@ const Product = () => {
                 </div>
               </div>
             </div>
-          </OwlCarousel>
+          </Carousel>
         </div>
       </div>
       <div className="container-fluid py-5">
@@ -128,7 +142,7 @@ const Product = () => {
               Products For Your Best Friends
             </h1>
           </div>
-          <OwlCarousel className="product-carousel">
+          <Carousel breakPoints={breakPoints} className="product-carousel">
             <div className="pb-5">
               <div className="product-item position-relative bg-light d-flex flex-column text-center">
                 <img
@@ -224,7 +238,7 @@ const Product = () => {
                 </div>
               </div>
             </div>
-          </OwlCarousel>
+          </Carousel>
         </div>
       </div>
       <div className="container-fluid py-5">
@@ -238,7 +252,7 @@ const Product = () => {
               Products For Your Best Friends
             </h1>
           </div>
-          <OwlCarousel className=" product-carousel">
+          <Carousel breakPoints={breakPoints} className=" product-carousel">
             <div className="pb-5">
               <div className="product-item position-relative bg-light d-flex flex-column text-center">
                 <img
@@ -334,7 +348,7 @@ const Product = () => {
                 </div>
               </div>
             </div>
-          </OwlCarousel>
+          </Carousel>
         </div>
       </div>
     </>

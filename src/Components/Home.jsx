@@ -1,10 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import OwlCarousel from "react-owl-carousel";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
+
+import Carousel from "react-elastic-carousel";
 
 const Home = () => {
+  const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 2, itemsToScroll: 2, pagination: false },
+    { width: 850, itemsToShow: 3 },
+    { width: 1150, itemsToShow: 4, itemsToScroll: 2 },
+    { width: 1450, itemsToShow: 5 },
+    { width: 1750, itemsToShow: 6 },
+  ];
   return (
     <>
       {/*  Hero Start  */}
@@ -256,7 +263,7 @@ const Home = () => {
               Products For Your Best Friends
             </h1>
           </div>
-          <OwlCarousel className=" product-carousel">
+          <Carousel breakPoints={breakPoints} className=" product-carousel">
             <div className="pb-5">
               <div className="product-item position-relative bg-light d-flex flex-column text-center">
                 <img
@@ -352,7 +359,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </OwlCarousel>
+          </Carousel>
         </div>
       </div>
       {/*  Products End  */}
@@ -394,7 +401,10 @@ const Home = () => {
         <div className="container py-5">
           <div className="row justify-content-end">
             <div className="col-lg-7">
-              <OwlCarousel className=" testimonial-carousel bg-white p-5">
+              <Carousel
+                breakPoints={breakPoints}
+                className=" testimonial-carousel bg-white p-5"
+              >
                 <div className="testimonial-item text-center">
                   <div className="position-relative mb-4">
                     <img
@@ -443,7 +453,7 @@ const Home = () => {
                   <h5 className="text-uppercase">Client Name</h5>
                   <span>Profession</span>
                 </div>
-              </OwlCarousel>
+              </Carousel>
             </div>
           </div>
         </div>
