@@ -3,15 +3,20 @@ import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isUser, setIsUser] = useState(false);
+  const [isLoginUrl, setIsLoginUrl] = useState(false);
 
   const location = useLocation();
   useEffect(() => {
     const url = location.pathname.split("/").at(-1);
+    if (url === "user-login" || url === "vendor-login") {
+      setIsLoginUrl(true);
+    }
     if (url === "user-login") {
       setIsUser(true);
     }
     return () => {
       setIsUser(false);
+      setIsLoginUrl(false);
     };
   }, [location]);
 
@@ -90,14 +95,28 @@ const Navbar = () => {
                 Login
               </div>
               <div className="dropdown-menu m-0 text-center">
-                {isUser ? (
-                  <Link className="dropdown-item" to={"/vendor-login"}>
-                    VENDOR LOGIN
-                  </Link>
+                <Link className="dropdown-item" to={"/user-profile"}>
+                  Profile
+                </Link>
+                {isLoginUrl ? (
+                  isUser ? (
+                    <Link className="dropdown-item" to={"/vendor-login"}>
+                      VENDOR LOGIN
+                    </Link>
+                  ) : (
+                    <Link className="dropdown-item" to={"/user-login"}>
+                      USER LOGIN
+                    </Link>
+                  )
                 ) : (
-                  <Link className="dropdown-item" to={"/user-login"}>
-                    USER LOGIN
-                  </Link>
+                  <>
+                    <Link className="dropdown-item" to={"/vendor-login"}>
+                      VENDOR LOGIN
+                    </Link>
+                    <Link className="dropdown-item" to={"/user-login"}>
+                      USER LOGIN
+                    </Link>
+                  </>
                 )}
               </div>
             </div>

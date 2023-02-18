@@ -53,7 +53,7 @@ const UserLogin = () => {
             <p className="small fw-bold mt-2 pt-1 mb-0">
               Don't have an account?
               <br />
-              <Link className="link-danger text-dark" to={"/user/signup"}>
+              <Link className="link-danger text-dark" to={"/user-signup"}>
                 Register
               </Link>
             </p>

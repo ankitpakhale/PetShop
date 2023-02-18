@@ -56,44 +56,53 @@ const Footer = () => {
                 Follow Us
               </h5>
               <div className="d-flex">
-                <a className="btn btn-outline-primary btn-square me-2" href="#">
+                <Link
+                  className="btn btn-outline-primary btn-square me-2"
+                  to="#"
+                >
                   <i className="bi bi-twitter"></i>
-                </a>
-                <a className="btn btn-outline-primary btn-square me-2" href="#">
+                </Link>
+                <Link
+                  className="btn btn-outline-primary btn-square me-2"
+                  to="#"
+                >
                   <i className="bi bi-facebook"></i>
-                </a>
-                <a className="btn btn-outline-primary btn-square me-2" href="#">
+                </Link>
+                <Link
+                  className="btn btn-outline-primary btn-square me-2"
+                  to="#"
+                >
                   <i className="bi bi-linkedin"></i>
-                </a>
-                <a className="btn btn-outline-primary btn-square" href="#">
+                </Link>
+                <Link className="btn btn-outline-primary btn-square" to="#">
                   <i className="bi bi-instagram"></i>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-12 text-center text-body">
-              <a className="text-body" href="">
+              <Link className="text-body" to="">
                 Terms & Conditions
-              </a>
+              </Link>
               <span className="mx-1">|</span>
-              <a className="text-body" href="">
+              <Link className="text-body" to="">
                 Privacy Policy
-              </a>
+              </Link>
               <span className="mx-1">|</span>
-              <a className="text-body" href="">
+              <Link className="text-body" to="">
                 Customer Support
-              </a>
+              </Link>
               <span className="mx-1">|</span>
-              <a className="text-body" href="">
+              <Link className="text-body" to="">
                 Payments
-              </a>
+              </Link>
               <span className="mx-1">|</span>
-              <a className="text-body" href="">
+              <Link className="text-body" to="">
                 Help
-              </a>
+              </Link>
               <span className="mx-1">|</span>
-              <a className="text-body" href="">
+              <Link className="text-body" to="">
                 FAQs
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -101,9 +110,9 @@ const Footer = () => {
       {/*  Footer End  */}
 
       {/*  Back to Top  */}
-      <Link className="btn btn-primary py-3 fs-4 back-to-top" to={""}>
+      {/* <Link className="btn btn-primary py-3 fs-4 back-to-top" to={"#"}>
         <i className="bi bi-arrow-up"></i>
-      </Link>
+      </Link> */}
     </>
   );
 };
