@@ -49,6 +49,7 @@ function App() {
             <Route path="/user-signup" exact element={<UserSignup />} />
             <Route path="/vendor-login" exact element={<VendorLogin />} />
             <Route path="/vendor-product" exact element={<VendorProduct />} />
+
             <Route path="/orders" exact element={<MyOrder />} />
             <Route path="/user-orders" exact element={<UserOrder />} />
             <Route path="/product/:id" exact element={<SingleProduct />} />
