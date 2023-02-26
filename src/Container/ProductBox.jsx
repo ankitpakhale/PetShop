@@ -17,12 +17,12 @@ const ProductBox = ({ prod }) => {
             <h6 className="text-uppercase">{title}</h6>
             <h5 className="text-primary mb-0">${price}</h5>
             <div className="btn-action d-flex justify-content-center">
-              <a className="btn btn-primary py-2 px-3" href="">
+              <Link className="btn btn-primary py-2 px-3" to="/user-orders">
                 <i className="bi bi-cart"></i>
-              </a>
-              <a className="btn btn-primary py-2 px-3" href="">
+              </Link>
+              <Link className="btn btn-primary py-2 px-3" to="">
                 <i className="bi bi-eye"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </Link>

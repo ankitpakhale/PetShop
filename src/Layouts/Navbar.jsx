@@ -90,6 +90,14 @@ const Navbar = () => {
               About
             </Link>
 
+            <Link className="nav-item nav-link" to={"/orders"}>
+              My Order
+            </Link>
+
+            <Link className="nav-item nav-link" to={"/user-orders"}>
+              My Cart
+            </Link>
+
             <div className="nav-item dropdown">
               <div class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                 Login
