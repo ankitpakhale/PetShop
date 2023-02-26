@@ -24,6 +24,9 @@ import "./Assets/Styles/css/carousel.css";
 
 import Navbar from "./Layouts/Navbar";
 import Footer from "./Layouts/Footer";
+import MyOrder from "./Components/MyOrder";
+import SingleProduct from "./Container/SingleProduct";
+import UserOrder from "./Components/UserOrder";
 
 // import "./Assets/Styles/lib/owlcarousel/assets/owl.carousel.min.css";
 function App() {
@@ -46,6 +49,9 @@ function App() {
             <Route path="/user-signup" exact element={<UserSignup />} />
             <Route path="/vendor-login" exact element={<VendorLogin />} />
             <Route path="/vendor-product" exact element={<VendorProduct />} />
+            <Route path="/orders" exact element={<MyOrder />} />
+            <Route path="/user-orders" exact element={<UserOrder />} />
+            <Route path="/product/:id" exact element={<SingleProduct />} />
           </Routes>
         </main>
         <Footer />
